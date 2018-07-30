@@ -1,3 +1,5 @@
 # physics
-Hello world. This is a test. 29-06-2018
-This is another test. 30-06-2018
+This is a repository of physics related codes. They can be used for simulation, computation, or general education purposes.
+
+Owner/ Creator: Kevin Fernandes
+email: kevvyferns@gmail.com
