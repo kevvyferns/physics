@@ -24,7 +24,7 @@ def check_Dir(name, __path__):
             print ('File: {} already exists...\nMoving on...'.format(name))
     except Exception as ckDirExec:
         print ('Error in "{}" function'.format(ss._getframe().f_code.co_name))
-        print ckDirExec
+        print (ckDirExec)
         pass
     return __path__ + name + '/'
     
@@ -33,7 +33,7 @@ def make_Dir(val, _path_, _name__):
         os.makedirs(_path_ + _name__)
     except Exception as mkDirExec:
         print ('Error in "{}" function'.format(ss._getframe().f_code.co_name))
-        print mkDirExec
+        print (mkDirExec)
         pass
     
 def open_from_JSON(_path_, fname):
@@ -42,7 +42,7 @@ def open_from_JSON(_path_, fname):
             Data = js.load(f_)
     except Exception as opnJsnExec:
         print ('Error in "{}" function'.format(ss._getframe().f_code.co_name))
-        print opnJsnExec
+        print (opnJsnExec)
         pass
     return Data
 
@@ -53,7 +53,7 @@ def save_to_JSON(filename, Data):
         print ('Data saved in:\n\t{}'.format(filename))
     except Exception as savJsnExec:
         print ('Error in "{}" function'.format(ss._getframe().f_code.co_name))
-        print savJsnExec
+        print (savJsnExec)
         pass
     
 """- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"""
@@ -69,7 +69,7 @@ def make_Stats(inList):
         out = {'Average' : ave, 'S.Dev' : std, 'Maximum' : mx, 'Minimum' : mn, 'Absolute Range' : np.ptp(List)}
     except Exception as statExc:
         print ('Error in "{}" function'.format(ss._getframe().f_code.co_name))
-        print statExc
+        print (statExc)
         pass
     return out
 
@@ -82,7 +82,7 @@ def make_Fig(name, size = [12.5, 10]):
         print ('Nothing to see here...')
     except Exception as figExec:
         print ('Error in "{}" function'.format(ss._getframe().f_code.co_name))
-        print figExec
+        print (figExec)
         pass
             
 """- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"""
